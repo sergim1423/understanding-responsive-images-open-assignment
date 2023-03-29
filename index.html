@@ -15,10 +15,14 @@
 		body {
 			font: 1em/1.5 'Merriweather', Georgia, serif;
 			padding: 3em 0;
+			font-size: clamp(1rem, 2.5vw, 2rem); 
+			margin: 3em;
+
 		}
 
 		h1 {
 			font-family: 'Lato', Arial, sans-serif;
+			font-size: clamp(1rem, 10vw, 3rem); 
 		}
 
 		header,
@@ -44,7 +48,7 @@
 					content: '- ';
 				}
 
-		figure.fw {
+		/* figure.fw {
 			max-width: 100%;
 		}
 
@@ -56,15 +60,20 @@
 				figure.fw figcaption::after,
 				figure.half figcaption::after {
 					content: '-';
-				}
+				} */
 
-		figure.half {
+		/* figure.half {
 			width: 50%;
 			float: left;
-		}
+		} */
 
-		.figure-grp + .figure-grp figure {
+		/* .figure-grp + .figure-grp figure {
 			margin-top: -3em;
+		} */
+		.figure-grp{
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: repeat(4(1fr 1fr));
 		}
 
 		blockquote {
@@ -124,8 +133,11 @@
 
 	<!-- MAIN -->
 	<main>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore veniam, accusantium ducimus iure exercitationem accusamus alias unde esse reiciendis. Eum!</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, asperiores voluptates non maxime sequi consectetur quasi mollitia corrupti excepturi veritatis qui voluptate corporis, quos perspiciatis cum ducimus nostrum ex esse numquam necessitatibus, illum alias consequuntur eum odio adipisci? Doloremque voluptates repudiandae quis ad excepturi facere, temporibus beatae ex atque sint ipsum omnis illo officiis in cum, odio, eum maxime quidem consectetur. Voluptates facilis delectus architecto est dolore, perspiciatis vitae quidem impedit nostrum esse fugit, velit hic eius laborum itaque reprehenderit repellat soluta repellendus aliquam. Veritatis dolorem officia provident dolores, ad quas rerum autem est, totam id fugiat magni mollitia. Illo.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore veniam, </p>
+		<p>accusantium ducimus iure exercitationem accusamus alias unde esse reiciendis. Eum!></p>
+		<p>accusantium ducimus iure exercitationem accusamus alias unde esse reiciendis. Eum!></p>
+		<p>accusantium ducimus iure exercitationem accusamus alias unde esse reiciendis. Eum!></p>
+		<p>accusantium ducimus iure exercitationem accusamus alias unde esse reiciendis. Eum!></p>
 
 		<div class="figure-grp">
 			<figure class="half">
